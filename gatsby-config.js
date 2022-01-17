@@ -7,11 +7,11 @@ module.exports = {
     social: [
       {
         name: `github`,
-        url: `https://github.com/codebushi/gatsby-theme-document`
+        url: `https://github.com/`
       },
       {
         name: `twitter`,
-        url: `https://twitter.com/HuntaroSan`
+        url: `https://twitter.com/self_devs`
       }
     ],
     sidebarConfig: {
