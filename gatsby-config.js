@@ -21,11 +21,6 @@ module.exports = {
   },
   plugins: [
     { resolve: `gatsby-theme-document`},
-    {
-    resolve: "gatsby-transformer-remark",
-    options: {
-      plugins: ["@weknow/gatsby-remark-twitter"]
-    }
-  }
+    `gatsby-plugin-twitter`
 ]
 };
