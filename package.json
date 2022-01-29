@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@theme-ui/prism": "^0.3.0",
+    "@weknow/gatsby-remark-twitter": "^0.2.3",
     "gatsby": "^2.23.3",
+    "gatsby-plugin-twitter": "^4.6.0",
     "gatsby-theme-document": "1.0.10",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
