@@ -1,9 +1,12 @@
+@media screen and (min-width:720px) {
+
 .gatsby-resp-image-image css-0,
 .gatsby-resp-image-image,
 .gatsby-resp-image-background-image,
-.gatsby-resp-image-wrapper
- {
+.gatsby-resp-image-wrapper {
   position: relative !important;
   vertical-align: unset !important;
   float:right !important;
+  }
+
 }
