@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Document by Code Bushi`,
-    name: `Code Bushi`,
-    siteUrl: `https://`,
-    description: `This is my description that will be used in the meta tags and important for search results`,
+    title: `blog by the self.dev community`,
+    name: `Long Shong`,
+    siteUrl: `https://blog.theselfdev.com`,
+    description: `This is the selfdev community blog run by developers for developers and content creators.`,
     social: [
       {
         name: `github`,
-        url: `https://github.com/`
+        url: `https://github.com/selfdevs/blog`
       },
       {
         name: `twitter`,
@@ -15,7 +15,7 @@ module.exports = {
       }
     ],
     sidebarConfig: {
-      forcedNavOrder: ["/introduction", "/codeblock"],
+      forcedNavOrder: ["/introduction"],
       ignoreIndex: true
     }
   },

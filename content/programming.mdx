@@ -1,45 +1,11 @@
 ---
 title: 'Programming'
-description: 'This is the meta description for this page'
+description: 'selfdev community writes about topics related to programming, computer science and computer engineering. '
 ---
 
-Syntax Highlighting
+In this section we will share all our experiences and projects related to programming, computer science and computer engineering.
+We will cover a variety of topics from different fields like web development, embedded systems, machine learning, data science/engineering, robotics, game development and tutorials with tips for programming and how to get started and much more.
 
-```jsx
-import React, { useReducer } from 'react';
+Starting in February 2022.
 
-export const GlobalStateContext = React.createContext();
-export const GlobalDispatchContext = React.createContext();
-
-const initialState = {
-  collapsed: {}
-};
-
-function reducer(state, action) {
-  switch (action.type) {
-    case 'TOGGLE_NAV_COLLAPSED':
-      return {
-        ...state,
-        collapsed: {
-          ...state.collapsed,
-          [action.url]: !state.collapsed[action.url]
-        }
-      };
-    default:
-      return {
-        ...state
-      };
-  }
-}
-
-const GlobalContextProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(reducer, initialState);
-  return (
-    <GlobalStateContext.Provider value={state}>
-      <GlobalDispatchContext.Provider value={dispatch}>{children}</GlobalDispatchContext.Provider>
-    </GlobalStateContext.Provider>
-  );
-};
-
-export default GlobalContextProvider;
-```
+Stay tuned.

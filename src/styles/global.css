@@ -1,12 +1,27 @@
-@media screen and (min-width:720px) {
+@media screen and (min-width:720px){
 
 .gatsby-resp-image-image css-0,
 .gatsby-resp-image-image,
 .gatsby-resp-image-background-image,
 .gatsby-resp-image-wrapper {
   position: relative !important;
-  vertical-align: unset !important;
+  vertical-align: uns et !important;
   float:right !important;
-  }
+}
 
+img[alt="Joma Media Lab"],
+img[alt="youtube analytics"]{
+  margin-bottom: 5% !important;
+}
+img[alt="BAYC#2828"]{
+  margin: 0 0 5% 0 !important;
+}
+
+img[alt="LNY Doggo"]{
+  padding-left: 10% !important;
+}
+
+img[alt*=albina]{
+  width: 50rem !important;
+}
 }
