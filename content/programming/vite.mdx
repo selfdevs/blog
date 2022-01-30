@@ -1,0 +1,110 @@
+---
+title: 'An alternative to create-react-app, Vite!'
+description: 'Start a React + Typescript application with Vite in minutes, forget about create-react-app!'
+---
+<sub><sup><a href="https://www.instagram.com/champichampou">k_talpa</a> | 7 min read | 30.01.2022</sup></sub>
+
+# The motivation
+
+I’ve been developing with React for years now, and more recently using Typescript. And there is one thing that never changed,
+and I’m a bit concerned. **Every single React application starts from a `create-react-app`.** This would not be a problem for
+habits never causing any question, never becoming a problem, never catching all the attention.
+
+So, that’s enough. Hidden configs, developers around keeping saying “I don’t know anything about Webpack”, workarounds,
+endless vulnerabilities relying only on maintainers... It’s to find a brand new solution.
+
+# My own Webpack config
+
+I’ve made this exercise a few times, and I advice any developer using Webpack doing so (this includes those who use `create-react-app`
+or `react-scripts`, because of course, it’s using Webpack under the hood). This is why now I can pretend understanding and also being
+able to debug Webpack configs.
+
+Wait wait wait!
+
+Let me tell you something: there is recent bundler, probably 10 times faster and which needs almost 0 configuration to start a
+React + Typescript app. [Vite](https://vitejs.dev/).
+
+# The 0 config app
+
+Okay, I’ve heard you, let’s Keep It Super Simple.
+
+To start an application with Vite, all you need is a yarn project folder, where you install `vite` `react` `react-dom`,
+and also in devDependencies `typescript` `@types/react` `@types/react-dom`.
+
+Then, create a `index.html` in the root folder:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>My super app</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<div id="root"></div>
+		<script src="./src/index.tsx" type="module"></script>
+	</body>
+</html>
+```
+
+And also a very standard `src/index.tsx` file:
+
+```tsx
+import React from 'react';
+import { render } from 'react-dom';
+
+const App = () => {
+	return (
+		<h1>I believe I can fly!</h1>
+	);
+}
+
+render(<App />, document.getElementById('root'));
+```
+
+That’s the necessary code to have a React application render into your page.
+
+Now let’s open the `package.json` file and add 2 scripts:
+
+```json
+"scripts": {
+	"start": "vite",
+	"build": "vite build"
+}
+```
+
+And we are done. Type `yarn start` in a terminal, and you should get a blank page with “I believe I can fly” as a title.
+
+# Why I’m seduced by this solution
+
+## Efficiency 🏄
+
+Let’s assume this took you 20 minutes to copy this. Hopefully not. First: you wrote it on your own, or at you should have.
+So you will probably be able to reproduce this in case you are starting a new project, without any documentation.
+Second, play with it. Bundling is definitely faster than with Webpack. And this is significantly visible on bigger projects, believe me.
+
+## Less code and less dependencies 📦
+
+We wrote almost nothing, only what was really necessary to execute our project. Of course there is still a lot of code
+and work done under Vite, but less than under `react-scripts`. And if you looked carefully when you installed Vite,
+there is very few dependencies compared to `create-react-app`. Around 100 against several thousands. So it means faster
+installation (you CI budget will thank you), but more importantly less failure points, including less risk of
+vulnerabilities or unfixed vulnerabilities.
+
+## Avoid the eject nightmare 😫
+
+You are probably aware that `create-react-app` offers to “eject” the Webpack configuration, which means it will be
+migrated into your project folder instead of in the darkness of `node_modules`. And that’s fine, but when you then
+modify it, again and again, or even when other developers do it and then offer you to debug it... good luck. With Vite
+you can have one file at the project’s root, and then modify it as you go. Not hundreds of lines should appear out of nowhere.
+
+I hope this went well for you and you also find this solution very nice, feel free to reach out to me if you encounter
+any issue or if you have any question! Peace 🔆
+
+K-Talpa
+
+References:
+
+- Create React App documentation: [https://reactjs.org/docs/create-a-new-react-app.html](https://reactjs.org/docs/create-a-new-react-app.html)
+- Vite documentation: [https://vitejs.dev/](https://vitejs.dev/)
+- Webpack documentation: [https://webpack.js.org/](https://webpack.js.org/)
