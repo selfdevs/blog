@@ -21,6 +21,6 @@ module.exports = {
   },
   plugins: [
     { resolve: `gatsby-theme-document`},
-    `gatsby-plugin-twitter`
+    `gatsby-plugin-react-helmet`
 ]
 };

@@ -1,7 +1,7 @@
 {
   "name": "gatsby-theme-document-example",
   "author": "Code Bushi",
-  "repository": "https://github.com/codebushi/gatsby-theme-document-example",
+  "repository": "https://github.com/selfdevs/blog",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
@@ -12,6 +12,7 @@
     "@theme-ui/prism": "^0.3.0",
     "@weknow/gatsby-remark-twitter": "^0.2.3",
     "gatsby": "^2.23.3",
+    "gatsby-plugin-react-helmet": "^5.6.0",
     "gatsby-plugin-twitter": "^4.6.0",
     "gatsby-theme-document": "1.0.10",
     "react": "^16.13.1",
