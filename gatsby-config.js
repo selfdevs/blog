@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `blog by the self.dev community`,
     name: `Long Shong`,
-    siteUrl: `https://theselfdev.com`,
+    siteUrl: `https://blog.theselfdev.com`,
     description: `This is the selfdev community blog run by developers for developers and content creators.`,
     social: [
       {
