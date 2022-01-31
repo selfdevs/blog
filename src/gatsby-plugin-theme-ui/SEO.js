@@ -1,111 +1,90 @@
-import { graphql, useStaticQuery } from 'gatsby';
-import PropTypes from 'prop-types';
-import React from 'react';
-import Helmet from 'react-helmet';
-import siteImage from '../site-image-og.jpg';
+import React from "react"
+import PropTypes from "prop-types"
+import { Helmet } from "react-helmet"
+import { useLocation } from "@reach/router"
+import { useStaticQuery, graphql } from "gatsby"
 
-/**
- * This react helmt code is adapted from
- * https://themeteorchef.com/tutorials/reusable-seo-with-react-helmet.
- *
- * A great tutorial explaining how to setup a robust version of an
- * SEO friendly react-helmet instance.
- *
- *
- * Use the Helmt on pages to generate SEO and meta content!
- *
- * Usage:
- * <SEO
- *   title={title}
- *   description={description}
- *   image={image}
- * />
- *
- */
+const SEO = ({ title, description, image, article }) => {
+  const { pathname } = useLocation()
+  const { site } = useStaticQuery(query)
 
-const seoQuery = graphql`
-  {
-    allSite {
-      edges {
-        node {
-          siteMetadata {
-            title
-            name
-            siteUrl
-            description
-            social {
-              name
-              url
-            }
-          }
-        }
-      }
-    }
+  const {
+    defaultTitle,
+    titleTemplate,
+    defaultDescription,
+    siteUrl,
+    defaultImage,
+    twitterUsername,
+  } = site.siteMetadata
+
+  const seo = {
+    title: title || defaultTitle,
+    description: description || defaultDescription,
+    image: `${siteUrl}${image || defaultImage}`,
+    url: `${siteUrl}${pathname}`,
   }
-`;
 
-const SEO = ({ title, description, url, pathname }) => {
-  const results = useStaticQuery(seoQuery);
-  const site = results.allSite.edges[0].node.siteMetadata;
-  const twitter = site.social.find(option => option.name === 'twitter') || {};
+  return (
+    <Helmet title={seo.title} titleTemplate={titleTemplate}>
+      <meta name="description" content={seo.description} />
+      <meta name="image" content={seo.image} />
 
-  const fullURL = path => (path ? `${site.siteUrl}${path}` : site.siteUrl);
+      {seo.url && <meta property="og:url" content={seo.url} />}
 
-  // const pageTitle = title ? `${title} | ${site.title}` : site.title;
-  const pageTitle = title || site.title;
-  const pageDescription = description || site.description;
+      {(article ? true : null) && <meta property="og:type" content="article" />}
 
-  const metaTags = [
-    { charset: 'utf-8' },
-    {
-      'http-equiv': 'X-UA-Compatible',
-      content: 'IE=edge'
-    },
-    {
-      name: 'viewport',
-      content: 'width=device-width, initial-scale=1'
-    },
-    {
-      rel: 'canonical',
-      href: fullURL(pathname)
-    },
-    { itemprop: 'name', content: pageTitle },
-    { itemprop: 'description', content: pageDescription },
-    { itemprop: 'image', content: fullURL(siteImage) },
-    { name: 'description', content: pageDescription },
+      {seo.title && <meta property="og:title" content={seo.title} />}
 
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:site', content: site.siteName },
-    { name: 'twitter:title', content: pageTitle },
-    { name: 'twitter:description', content: pageDescription },
-    { name: 'twitter:creator', content: twitter.url },
-    {
-      name: 'twitter:image',
-      content: fullURL(siteImage)
-    },
+      {seo.description && (
+        <meta property="og:description" content={seo.description} />
+      )}
 
-    { property: 'og:title', content: pageTitle },
-    { property: 'og:url', content: url },
-    { property: 'og:image', content: fullURL(siteImage) },
-    { property: 'og:description', content: pageDescription },
-    { property: 'og:site_name', content: site.siteName }
-  ];
+      {seo.image && <meta property="og:image" content={seo.image} />}
 
-  return <Helmet title={pageTitle} htmlAttributes={{ lang: 'en' }} meta={metaTags} />;
-};
+      <meta name="twitter:card" content="summary_large_image" />
+
+      {twitterUsername && (
+        <meta name="twitter:creator" content={twitterUsername} />
+      )}
+
+      {seo.title && <meta name="twitter:title" content={seo.title} />}
+
+      {seo.description && (
+        <meta name="twitter:description" content={seo.description} />
+      )}
+
+      {seo.image && <meta name="twitter:image" content={seo.image} />}
+    </Helmet>
+  )
+}
+
+export default SEO
 
 SEO.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  url: PropTypes.string,
-  pathname: PropTypes.string
-};
+  image: PropTypes.string,
+  article: PropTypes.bool,
+}
 
 SEO.defaultProps = {
-  title: '',
-  description: '',
-  url: '',
-  pathname: ''
-};
+  title: null,
+  description: null,
+  image: null,
+  article: false,
+}
 
-export default SEO;
+const query = graphql`
+  query SEO {
+    site {
+      siteMetadata {
+        defaultTitle: title
+        titleTemplate
+        defaultDescription: description
+        siteUrl: siteUrl
+        defaultImage: image
+        twitterUsername
+      }
+    }
+  }
+`

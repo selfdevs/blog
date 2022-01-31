@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-theme-document-example",
-  "author": "Code Bushi",
+  "name": "selfdevBlog",
+  "author": "Long Shong",
   "repository": "https://github.com/selfdevs/blog",
   "version": "1.0.0",
   "license": "MIT",
@@ -14,6 +14,7 @@
     "gatsby": "^2.23.3",
     "gatsby-plugin-react-helmet": "^5.6.0",
     "gatsby-plugin-twitter": "^4.6.0",
+    "gatsby-remark-twitter-cards": "^0.6.1",
     "gatsby-theme-document": "1.0.10",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
