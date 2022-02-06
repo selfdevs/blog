@@ -32,3 +32,9 @@ This is how to add that local image into your .mdx file then:
 ```![Screenshot](blog/content/images/<YOUR_FILE>.png?raw=true)```
 
 Here is a [markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images)
+
+# How to start a development server
+
+Use `yarn` to install the dependencies: `yarn install`
+
+Launch the development server with `yarn run develop`
