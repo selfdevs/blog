@@ -1,13 +1,12 @@
 ---
-title: 'Building a Decentralized Autonomous Organization for self.dev'
+title: 'Building self.devDAO'
 description: 'Exploring the concept of a DAO for self.dev and its potential impact on community engagement and self-development.'
 ---
 
 <sub><sup><a href="https://instagram.com/self.devs">self.dev</a> | 5-7 min read | 23.05.2023</sup></sub>
 
 **selfdevDAO: Shaping Our Community Together**
-
-![Banner](/content/imgs/selfdev_dao/network_globe_shiny.png)
+![Banner](../imgs/selfdev_dao/network_globe_shiny.png)
 Image generated with MidJourney: `a decentralized network across the globe - ar 16:9 --v 5`
 
 
