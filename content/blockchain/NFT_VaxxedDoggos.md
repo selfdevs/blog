@@ -17,7 +17,7 @@ With currently [1.57M](https://www.youtube.com/c/jomaoppa) subscribers on Youtub
 and I believe those doggos will be a very interesting and promising project in the content creator and blockchain space.
 
 # **NFT project details**
-![LNY Doggo](../imgs/auction250.jpg)
+![LNY Doggo](../imgs/blockchain_joma/auction250.jpg)
 - VaxxedDoggos, 2500 half corgis/shibas drawn by Joma
 - acts as a funding for Joma's short films & content
 - Solana Blockchain, minting price 0.88 SOL (~$100)
@@ -36,7 +36,7 @@ Joma also initiated a very successful [auction](https://www.magiceden.io/auction
 I believe Joma will be one of the first successful and serious tech content creator who is creating his own non-simping NFT collection with a clear goal and vision:
 > **building the ["Joma Media Lab"](https://www.youtube.com/watch?v=k9JFitrgGgs&t=354s) and funding his film directing.**
 
-![Joma Media Lab](../imgs/jomamediacompany.png "Joma Media Lab (Source: https://socialblade.com/youtube/c/jomaoppa/monthly)")
+![Joma Media Lab](../imgs/blockchain_joma/jomamediacompany.png "Joma Media Lab (Source: https://socialblade.com/youtube/c/jomaoppa/monthly)")
 
 
 
@@ -47,7 +47,7 @@ After watching Joma's videos for more than 2 years already I could follow his jo
 And after all those endless hours watching his videos, I can tell he never stopped evolving - just like Son-Goku. Every new video feels like another power level regarding creativity and his understanding for his viewership and YT-algorithm.
 Working as a Data Scientist and Analyst comes with some useful skills - as you can see the successful growth of Joma's YouTube channel in the graph down below.
 
-![youtube analytics](../imgs/joma-yt-analytics.jpg "Consistent growth on YouTube (Source: https://socialblade.com/youtube/c/jomaoppa/monthly)")
+![youtube analytics](../imgs/blockchain_joma/joma-yt-analytics.jpg "Consistent growth on YouTube (Source: https://socialblade.com/youtube/c/jomaoppa/monthly)")
 
 When you think he couldn't do it better, he hires a whole movie making team and creates his own little [short movies](https://www.youtube.com/watch?v=7ZcmboYbNPQ&t=1s) in the Joma Universe.
 The quality and effort put into the videos is increasing with every single video.
@@ -76,7 +76,7 @@ Another and maybe even the most important factor is that Joma joined the [Bored 
 I believe it's an important move Joma does, which could be translated into the following:
   >*I am investing more than ~$200k (51.96ETH) on one NFT to tell the world I am serious about the NFT space. I want to access a community with other like-minded individuals who believe in the blockchain. That's why I am building my own.*.
 
-![BAYC#2828](../imgs/joma-ape2828.jpg "Consistent growth on YouTube (Source: https://socialblade.com/youtube/c/jomaoppa/monthly)")
+![BAYC#2828](../imgs/blockchain_joma/joma-ape2828.jpg "Consistent growth on YouTube (Source: https://socialblade.com/youtube/c/jomaoppa/monthly)")
 
 On November 17th 2021, Joma became an ape: [BAYC#2828](https://opensea.io/assets/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/2828) for 51.96ETH.
 Just to give you some reference, there are otherpopular celebrities who also are part of the BAYC project: Eminem, Shaquille O’Neal, Gary Vaynerchuk, Steve Aoki, Paris Hilton, Justin Bieber and many [more](https://boardroom.tv/bored-ape-nft-celebrity-owners/#:~:text=Celebrities%20from%20around%20the%20world,show%20off%20their%20new%20purchases.&text=Get%20on%20our%20list%20for,trends%2C%20interviews%2C%20and%20more.).

@@ -52,7 +52,7 @@ Hold up, there’s an easy solution for this: docking stations. Choosing the rig
 
 After we talked about the experiences, I made building up my workplace the last two years, now here is the final result:
 
-![Coffee Code Corner WFH Setup 2022](../imgs/5_WFH_banner.jpg "Coffee Code Corner WFH Setup  (Source: https://coffeecodecorner.blogspot.com/)")
+![Coffee Code Corner WFH Setup 2022](../imgs/self-development_tess/5_WFH_banner.jpg "Coffee Code Corner WFH Setup  (Source: https://coffeecodecorner.blogspot.com/)")
 
 Not quiet as fancy as may expected mh? But it is just the right one for me: clean, a lot of space and a good but affordable technical standard. Your perfect might look completely different.
 

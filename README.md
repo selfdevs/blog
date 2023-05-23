@@ -1,40 +1,65 @@
-# How to write a new blogpost:
+[![Video Banner](content/imgs/selfdev_intro/SAGE_banner.png)](content/imgs/selfdev_intro/discord_sage_logo_bannershort.mp4)
 
-**Example:**
-In this case I want to write something about blockchain with the title *Are NFTs the biggest scam of 2022?"*
-
-1. I will start a Pull-Request on this repository and create a new .mdx file in the right folder which you want to write a blog post about.
-
-2. Since I want to add to blockchain, I will add a new file in the blockchain folder like this:
-	
-	```content/blockchain/are-nfts-the-biggest-scam-of-2022.mdx``` 
-	
-3. Then I only need to copy one of the other .mdx files and start my own blog post. But since I am such a smart dude I copied the template down below already:
-	```
-	---
-	title: 'Are NFTs the biggest scam of 2022?'
-	description: 'People make millions out of NFTs and today I am discussing if it's just another ponzi scheme or comes with a future.'
-	---
-
-	<YOUR CONTENT IN MARKDOWN FORMAT>
-	```
-	The most important part are the title and description (summary of your blog post) properties.
+sudo npm install -g yarn
 
 
-#### How to add images:
+# Introduction
 
-If you want to add a local image, you will need to add it under `content` in `images`:
-	
-	```/content/images```
+Welcome to the self.dev blog! Our blog is dedicated to exploring various topics related to self-development, programming, mindset improvement, hands-on tech tutorials, and current trends in the data and AI space. Whether you're a programmer looking for coding tips, someone interested in personal growth, or curious about the latest advancements in technology, our blog has something for everyone. Join us as we delve into the exciting world of self.development!
 
-This is how to add that local image into your .mdx file then:
+# Setup
 
-```![Screenshot](blog/content/images/<YOUR_FILE>.png?raw=true)```
+To get started with the self.dev blog, follow these simple steps:
 
-Here is a [markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images)
+Install the necessary dependencies by running the command 
 
-# How to start a development server
+``` ssh
+yarn install
+```
 
-Use `yarn` to install the dependencies: `yarn install`
 
-Launch the development server with `yarn run develop`
+Launch the development server with 
+
+``` ssh 
+yarn run develop
+```
+
+Access the blog through your preferred web browser.
+
+By following these setup instructions, you'll have the blog up and running in no time, ready to explore the engaging content we have to offer.
+
+# How to Write a New Blog Post:
+
+Creating a new blog post for the selfdev community is easy! Just follow these steps:
+
+1. Begin by starting a Pull Request on the repository.
+2. Navigate to the appropriate folder for the topic you want to write about (e.g., `content/blockchain`).
+3. Create a new .mdx file with a descriptive name for your blog post (e.g., `are-nfts-the-biggest-scam-of-2022.mdx`).
+4. Copy the template from an existing blog post file and paste it into your newly created file.
+5. Customize the title and description properties to reflect the focus of your blog post.
+6.Use Markdown syntax to write your content, sharing your thoughts, insights, and expertise with the selfdev community.
+
+Here is a template:
+
+``` md
+---
+title: 'Are NFTs the biggest scam of 2022?'
+description: 'People make millions out of NFTs and today I am discussing if it's just another ponzi scheme or comes with a future.'
+---
+
+<YOUR CONTENT IN MARKDOWN FORMAT>
+```
+
+Don't forget to add images to enhance your blog post! If you're using local images, place them under the content/images folder. To include an image in your blog post, use the following Markdown syntax:
+
+``` md
+![Screenshot](blog/content/images/your-image.png?raw=true)
+```
+
+# Who Can Contribute:
+
+At self.dev, we believe in the power of community collaboration. As such, only NEXT LEVEL members have the privilege to contribute to our blog. If you gained the trust and the NEXT LEVEL role, we invite you to share your knowledge, experiences, and ideas by creating and publishing blog posts. Your valuable contributions will help inspire and educate fellow members, fostering a culture of growth and learning within our community.
+
+Join our [Discord](https://discord.gg/selfdev) server and learn [here](https://discord.com/channels/768200129060536340/896887033874751509) how you can gain the NEXT LEVEL role.
+
+Feel free to use these content snippets as a starting point and customize them to fit the specific style and tone of your blog.
