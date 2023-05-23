@@ -40,7 +40,7 @@ node_modules/
 jspm_packages/
 package.lock
 package-lock.json
-yarn.lock
+# yarn.lock
 
 # Typescript v1 declaration files
 typings/
