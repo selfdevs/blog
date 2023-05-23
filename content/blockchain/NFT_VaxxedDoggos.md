@@ -1,5 +1,5 @@
 ---
-title: 'VaxxedDoggos'
+title: 'JomaTech's NFTs'
 description: 'YouTuber JomaTech is launching his first NFT collection on the Solana Blockchain.'
 ---
 <sub><sup><a href="https://instagram.com/long.integer">long.integer</a> | 5 min read | 30.01.2022</sup></sub>

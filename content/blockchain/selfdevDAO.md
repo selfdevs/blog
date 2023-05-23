@@ -1,5 +1,5 @@
 ---
-title: 'Building self.devDAO'
+title: 'Building self.devDAO?'
 description: 'Exploring the concept of a DAO for self.dev and its potential impact on community engagement and self-development.'
 ---
 
